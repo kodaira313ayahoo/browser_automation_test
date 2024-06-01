@@ -12,6 +12,494 @@
     <title>HOTEL PLANISPHERE - テスト自動化練習サイト</title>
   </head>
   <body class="bg-light">
+<section class="section main_contents clear_fix">
+		<h1>電気料金等の請求のお知らせ</h1>
+		<input type="hidden" name="number" value="210001014495">
+
+		<div class="select_status">
+			<dl class="select_box clear_fix">
+				<dt><label>ご請求年月</label></dt>
+				<dd>
+				<select name="month" size="1" null="" onchange="postFormData(this, '/xbaction/hepco.user.contract_bill.Scene1'); return false;">
+<option value="202405w20240524" selected="">2024年 5月</option>
+<option value="202404w20240420">2024年 4月</option>
+</select>
+
+				</dd>
+			</dl>
+
+			<dl class="select_box clear_fix" style="display:none;">
+				<dt><label>対象となる請求情報</label></dt>
+				<dd>
+				
+				</dd>
+			</dl>
+		</div>
+
+		<div class="yellow_bg" style="display:none;">
+			<p>他のご契約とまとめてご請求いたします。<br>
+			実際のご請求は、まとめている全契約の確定後となります。</p>
+		</div>
+		
+		<div class="clear_fix"></div>
+		
+		<div class="invoice_detail clear_fix">
+			国の支援により、ご請求金額はご使用量に応じて値引きしています。<br>
+			　●２０２３年１０月分から２０２４年５月分の値引き単価<br>
+　　【電気】低圧契約　3.5円／kWh　高圧契約　1.8円／kWh<br>
+			　　【ガス】15円／m3<br>
+			　●値引き額の算定<br>
+			　　ご使用量×値引き単価＝値引き額<br>
+			定額電灯等すべてのご契約の値引き単価を含む詳細は、
+			<a href="https://www.hepco.co.jp/price_relaxation_measures/index.html" target="_blank">国の電気・ガス価格激変緩和対策事業を活用した料金の値引きについて</a>
+			をご覧ください。
+		</div>
+
+		
+		<!--<hr class="main_dot_hr">-->
+		
+		<div class="claim_detail clear_fix">
+			<div class="claim_left">
+
+				<p class="date_txt text_right">2024年 5月24日発行</p>
+				<p class="name_txt">
+					&nbsp;<br>
+					バルコランドリースペース 様&nbsp;
+				</p>
+
+				<p class="mb_20">日頃より、格別のお引き立てをいただき、誠にありがとうございます。<br>
+				ご請求につきましては次のとおりでございます。</p>
+
+				<table class="simple_tbl strong_tbl mb_10">
+					<colgroup>
+						<col style="width:30%;">
+						<col style="width:70%;">
+					</colgroup>
+					<tbody><tr>
+						<th scope="row">ご請求年月</th>
+						<td><em>2024年 5月分</em></td>
+					</tr>
+					<tr>
+						<th scope="row">ご請求金額</th>
+						<td>
+							<em>42,197 円</em>
+							<div style="display:none;">(うち消費税等相当額3,836 円)<div class="pc_vis">&nbsp;<br>&nbsp;<br>&nbsp;<br></div></div>
+							
+								<div class="">（課税対象額10％税込42,197 円）</div>
+							
+								<div class="">（うち消費税等相当額10％3,836 円）</div>
+							
+								<div class="pc_vis"> </div>
+							
+								<div class="pc_vis"> </div>
+													</td>
+					</tr>
+				</tbody></table>
+
+				<table class="simple_tbl mmt_17 mb_15 sp_vis">
+					<colgroup>
+						<col style="width:30%;">
+						<col style="width:70%;">
+					</colgroup>
+					<tbody><tr>
+						<th scope="row">ご契約住所</th>
+						<td>札幌市中央区南十四条西１５丁目１－３ヴェルデ山鼻</td>
+					</tr>
+				</tbody></table>
+
+			</div>
+
+			<div class="claim_right">
+				<table class="simple_tbl" style="margin-bottom: 82px !important;">
+					<colgroup>
+						<col style="width:35%;">
+						<col style="width:65%;">
+					</colgroup>
+					<tbody><tr>
+						<th scope="row">お客さま番号&nbsp;</th>
+						<td>1000-791-169&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">ご請求番号&nbsp;</th>
+						<td>21-00010-14495&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">供給地点特定番号&nbsp;</th>
+						<td>01-0183-0370-5010-0420-5100&nbsp;</td>
+					</tr>
+				</tbody></table>
+
+				<table class="simple_tbl mb_15">
+					<colgroup>
+						<col style="width:35%;">
+						<col style="width:65%;">
+					</colgroup>
+					<tbody><tr>
+						<th scope="row">支払期日&nbsp;</th>
+						<td>２０２４年　６月２４日&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">&nbsp;</th>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<th scope="row">次回ご請求予定日&nbsp;</th>
+						<td>２０２４年　６月２１日&nbsp;</td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div>
+
+		<table class="simple_tbl strong_tbl no_b_border pc_vis">
+			<colgroup>
+				<col style="width:16%;">
+				<col style="width:84%;">
+			</colgroup>
+			<tbody><tr>
+				<th scope="row">ご契約住所</th>
+				<td>札幌市中央区南十四条西１５丁目１－３ヴェルデ山鼻</td>
+			</tr>
+		</tbody></table>
+
+
+		<div class="invoice_detail mt_20">
+			<p class="mb_10" style="display:none;">
+				＜お客さまへのお知らせ＞<br>
+				　ご請求させていただきます料金のご使用期間中に契約内容の変更がございました。<br>
+				　ご契約内容および料金の内訳は、「対象となる請求情報」から選択してご確認ください。
+			</p>
+			<p class="mb_10" style="display:none;">
+				＜お客さまへのお知らせ＞<br>
+				　上記ご契約住所の需給契約において、需給契約解除後に請求金額の精算が発生いたしましたので、お知らせいたします。<br>
+				<br>
+				　ご不明な点がございましたら、以下お問い合わせ先までご連絡をお願いします。<br>
+				<br>
+				　　料金事務センター<br>
+				　　　0570-092-500
+			</p>
+			<div style="">
+				<h3>ご契約内容</h3>
+				<div class="three_column clear_fix">
+					<ul>
+						<li><em>契約種別</em> 低圧電力</li>
+						<li><em>契約電力 主契約</em> 18kW</li>
+						<li><em> </em> </li>
+					</ul>
+					<ul>
+						<li><em>使用期間</em> 　４月２０日～　５月２３日</li>
+						<li><em></em> </li>
+						<li><em></em> </li>
+					</ul>
+					<ul>
+						<li>&nbsp;</li>
+						<li><em></em> </li>
+						<li><em></em> </li>
+					</ul>
+				</div>
+			</div>
+
+			<div style="">
+				<h3>ご使用実績</h3>
+				<div class="three_column clear_fix">
+					<ul>
+						<li><em>使用電力量　　合計</em> 804kWh</li>
+						<li><em></em> </li>
+					</ul>
+					<ul>
+						<li><em></em> </li>
+					</ul>
+				</div>
+			</div>
+
+			<div style="display:none;">
+				<h3></h3>
+				<div class="four_column clear_fix pc_vis">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="clear_fix sp_vis">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<p class="mt_20 mb_10"></p>
+		</div>
+
+		<div class="cash_deta mt_20" style="">
+			<p>　＜口座振替・クレジットカードでのお支払いが便利です＞</p>
+			<p>　お手続きをご希望の場合は<a href="http://www.hepco.co.jp/home/contract_change/cc01.html" target="_blank">こちら</a>へお進みください。</p>
+			<p></p>
+		</div>
+
+		<div class="price_detail" style="">
+			<h3 class="mb_10">電気料金等内訳</h3>
+			<p>記載されていない事項につきましては、ご契約中の契約種別に応じた約款または要綱によります。<span style="display:none;"><br>
+			電力量料金の項目について、夏季とその他季が混在する7月・10月は、「変更前」「変更後」で表示される場合がございます。契約書に記載の電力量料金単価をご確認下さい。</span><span style="display:none;"><br>
+			カーボンＦプランを適用中のご契約に対しては、ご契約内容にもとづき、月間のご使用量に応じた環境価値等を付加いたします。</span></p>
+			<table class="no_responsive_tbl">
+				<colgroup>
+					<col style="width:25%;">
+					<col style="width:10%;">
+					<col style="width:15%;">
+					<col style="width:10%;">
+					<col style="width:40%;">
+				</colgroup>
+				<thead>
+				<tr>
+					<th scope="col">料金項目</th>
+					<th scope="col">単価</th>
+					<th scope="col">kVA/kW/<br class="sp_vis">kWh</th>
+					<th scope="col">金額（円）</th>
+					<th scope="col" class="pc_vis">備考</th>
+				</tr>
+				</thead>
+				<tbody>
+					
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">基本料金</span></td>
+						<td label="単価" style="text-align:right;">1,377.86</td>
+						<td label="kVA/kW/kWh" style="text-align:right;">18</td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">23,561.40</td>
+						<td label="備考" class="pc_vis" style="text-align:right;">力率８５％超過（力率割引５％）　　　　　　３４日間</td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;">力率８５％超過（力率割引５％）　　　　　　３４日間</td>
+					</tr>
+															
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">電力量料金</span></td>
+						<td label="単価" style="text-align:right;"></td>
+						<td label="kVA/kW/kWh" style="text-align:right;"></td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">15,830.76</td>
+						<td label="備考" class="pc_vis" style="text-align:right;"></td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;display:none;"></td>
+					</tr>
+															
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">  電力量料金</span></td>
+						<td label="単価" style="text-align:right;">28.71</td>
+						<td label="kVA/kW/kWh" style="text-align:right;">804</td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">23,082.84</td>
+						<td label="備考" class="pc_vis" style="text-align:right;"></td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;display:none;"></td>
+					</tr>
+															
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">  燃料費等調整額</span></td>
+						<td label="単価" style="text-align:right;">-9.02</td>
+						<td label="kVA/kW/kWh" style="text-align:right;">804</td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">-7,252.08</td>
+						<td label="備考" class="pc_vis" style="text-align:right;"></td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;display:none;"></td>
+					</tr>
+															
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">再エネ発電賦課金</span></td>
+						<td label="単価" style="text-align:right;">3.49</td>
+						<td label="kVA/kW/kWh" style="text-align:right;">804</td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">2,805   </td>
+						<td label="備考" class="pc_vis" style="text-align:right;"></td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;display:none;"></td>
+					</tr>
+															
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">電気料金（小計）</span></td>
+						<td label="単価" style="text-align:right;"></td>
+						<td label="kVA/kW/kWh" style="text-align:right;"></td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">42,197   </td>
+						<td label="備考" class="pc_vis" style="text-align:right;"></td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;display:none;"></td>
+					</tr>
+															
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">課税対象額（１０％税込）</span></td>
+						<td label="単価" style="text-align:right;"></td>
+						<td label="kVA/kW/kWh" style="text-align:right;"></td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">42,197   </td>
+						<td label="備考" class="pc_vis" style="text-align:right;"></td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;display:none;"></td>
+					</tr>
+															
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">  うち消費税等相当額（１０％）</span></td>
+						<td label="単価" style="text-align:right;"></td>
+						<td label="kVA/kW/kWh" style="text-align:right;"></td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">3,836   </td>
+						<td label="備考" class="pc_vis" style="text-align:right;"></td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;display:none;"></td>
+					</tr>
+															
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">合計請求額</span></td>
+						<td label="単価" style="text-align:right;"></td>
+						<td label="kVA/kW/kWh" style="text-align:right;"></td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">42,197   </td>
+						<td label="備考" class="pc_vis" style="text-align:right;"></td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;display:none;"></td>
+					</tr>
+															
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">  うち消費税等相当額</span></td>
+						<td label="単価" style="text-align:right;"></td>
+						<td label="kVA/kW/kWh" style="text-align:right;"></td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">3,836   </td>
+						<td label="備考" class="pc_vis" style="text-align:right;"></td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;display:none;"></td>
+					</tr>
+															
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">  うち託送料金相当額（参考）</span></td>
+						<td label="単価" style="text-align:right;">10.62</td>
+						<td label="kVA/kW/kWh" style="text-align:right;">804</td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">8,538   </td>
+						<td label="備考" class="pc_vis" style="text-align:right;"></td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;display:none;"></td>
+					</tr>
+															
+					
+					<tr>
+						<td label="料金項目"><span class="tbl_indent">    うち賠償負担金相当額</span></td>
+						<td label="単価" style="text-align:right;"></td>
+						<td label="kVA/kW/kWh" style="text-align:right;"></td>
+						<td label="金額（円）" style="text-align:right;white-space:pre;">32   </td>
+						<td label="備考" class="pc_vis" style="text-align:right;"></td>
+					</tr>
+					<tr class="sp_vis">
+						<td colspan="5" label="備考" class="label_on" style="text-align:right;display:none;"></td>
+					</tr>
+										
+					<tr>
+						<td colspan="5" style="text-align:right;">燃料費等調整単価のお知らせ（１ｋＷｈあたり、税込）</td>
+					</tr>
+					
+					<tr>
+						<td colspan="5" style="text-align:right;">５月（当月）分　　　－９．０２円　　　</td>
+					</tr>
+					
+					<tr>
+						<td colspan="5" style="text-align:right;">６月（翌月）分　　　－７．４７円　　　</td>
+					</tr>
+					
+					<tr>
+						<td colspan="5" style="text-align:right;">翌月分は当月分に比べ　　＋１．５５円　　　</td>
+					</tr>
+														</tbody>
+			</table>
+		</div>
+
+		<div class="price_detail">
+			<div class="info_txtarea" style="">
+				<div>○停電等、電気設備に関するお問い合わせは、お近くの一般送配電事業者までご連絡ください。</div>
+				<div>○再エネ発電賦課金は、法律にもとづき、全てのお客さまにご負担いただいております。詳細は弊社ホームページをご覧ください。</div>
+				<div>○託送料金相当額には、賠償負担金相当額（０．０４円／ｋＷｈ）を含みます。詳細は弊社ホームページをご覧ください。</div>
+				<div></div>
+				<div></div>
+			</div>
+			
+			<p class="mb_10" style="display:none;">
+				複数契約の料金をまとめてお支払いしている場合、トップページの「複数契約のご請求まとめ」から適格請求書のダウンロードをお願いします。
+			</p>
+
+			<ul class="refer_btn_set02 clear_fix">
+				<li class="pdf" style=""><a href="/u.download.BillPDF?number=271060248072&amp;month=202405" target="_blank"><span>請求のお知らせ出力(PDF)</span></a></li>
+				<li class="csv" style=""><a href="/u.download.BillCSV?number=271060248072&amp;month=202405" target="_blank"><span>請求情報出力(CSV)</span></a></li>
+				<li class="graf"><a href="/u.graph_month/number/210001014495/month/202405.html"><span>ご使用量の詳細</span></a></li>
+			</ul>
+		</div>
+
+		<div style="">
+			<h2>受領済証明書ダウンロード</h2>
+			<p class="mb_15">期間を指定してください。（最大24か月分の受領済証明書をダウンロードできます）<br>
+			複数契約の料金をまとめてお支払いしている場合、トップページの「複数契約のご請求まとめ」 からダウンロードをお願いします。</p>
+			
+			<div class="certificate_dl">
+				<table>
+				  <tbody><tr>
+					<td><select name="receipt_from" size="1" null="">
+<option value="202405">2024年 5月</option>
+<option value="202404" selected="">2024年 4月</option>
+</select>
+</td>
+					<td class="bg_none">～</td>
+					<td><select name="receipt_to" size="1" null="">
+<option value="202405" selected="">2024年 5月</option>
+<option value="202404">2024年 4月</option>
+</select>
+</td>
+				  </tr>
+				</tbody></table>
+				<div class="error"></div>
+				<p class="pdf_btn">
+					<a id="button_receipt" name="button_receipt" onclick="postFormData(this, '/xbaction/hepco.user.contract_bill.Scene1'); return false;" onkeypress="postFormData(this, '/xbaction/hepco.user.contract_bill.Scene1'); return false;" href="#button_receipt"><span>受領済証明書出力(PDF)</span></a>
+				</p>
+			</div>
+
+		</div>
+
+		<p class="common_btn gry center"><a href="/">トップページへ戻る</a></p>
+	</section>
+    
+    
     <h1 class="text-center text-uppercase d-none d-lg-block display-3 my-5">Hotel Planisphere</h1>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-lg-4">
       <a class="navbar-brand text-uppercase font-weight-bold d-lg-none" href="#">Hotel Planisphere</a>
