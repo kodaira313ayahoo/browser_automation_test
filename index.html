@@ -20,8 +20,6 @@
 <pre>
 出展元：https://stackoverflow.com/questions/71764902/
 class="js-delivery-container" の中の、
-<input type="radio" name="radio-delivery" value="50">
-
 const deliveryItems = await page.locator('.js-delivery-container'); //Items
 const deliveryMethod = deliveryItems.locator('input[value="50"]'); //input in items selected by value
 const example_parent = await deliveryMethod.closest('.js-delivery-name'); //name what i want to check
@@ -30,11 +28,35 @@ await expect(example_parent).toHaveText('Osobní odběr'); //check if selected r
 <hr>
 <div class="select-content-box js-delivery-container">
    <div class="select-content delivery-icon-factory">
-        <div class="extended-title transport-icon js-delivery-name">Osobní odběr</div>
+        <div class="extended-title transport-icon js-delivery-name">AAAAA-20</div>
+        <div class="extended-price js-delivery-price"></div>
+        <div class="select-btn">
+            <label class="label toggle">
+                <input type="radio" name="radio-delivery" value="20">
+                <div class="toggle-control"></div>
+            </label>
+        </div>
+        <div class="cleaner"></div>
+        <div class="select-address" style=""></div>
+    </div>
+   <div class="select-content delivery-icon-factory">
+        <div class="extended-title transport-icon js-delivery-name">BBB-50</div>
         <div class="extended-price js-delivery-price"></div>
         <div class="select-btn">
             <label class="label toggle">
                 <input type="radio" name="radio-delivery" value="50">
+                <div class="toggle-control"></div>
+            </label>
+        </div>
+        <div class="cleaner"></div>
+        <div class="select-address" style=""></div>
+    </div>
+   <div class="select-content delivery-icon-factory">
+        <div class="extended-title transport-icon js-delivery-name">CCC-70</div>
+        <div class="extended-price js-delivery-price"></div>
+        <div class="select-btn">
+            <label class="label toggle">
+                <input type="radio" name="radio-delivery" value="70">
                 <div class="toggle-control"></div>
             </label>
         </div>
